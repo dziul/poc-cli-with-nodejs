@@ -1,10 +1,14 @@
 {
-  "name": "poc__cli",
+  "name": "xpto",
   "version": "1.0.0",
   "description": "",
-  "bin": "dist/index.js",
+  "bin": {
+    "xpto": "dist/index.js"
+  },
+  "main": "dist/index.js",
   "scripts": {
-    "build": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "rm -fr dist && tsc --build"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +18,8 @@
     "commander": "^9.4.1",
     "conf": "^10.2.0",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
   }
 }

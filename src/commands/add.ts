@@ -1,4 +1,7 @@
-export function add(task, options){
+
+
+
+export function add(task:any, options:any){
 
     console.log(task, options)
 }
